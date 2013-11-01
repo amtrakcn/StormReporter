@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tornadoDetailBlock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tornadoDetailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/tornadoDetailText"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tornadoDetailBreakLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tornadoDetailTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:text="@string/breakLine"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tornadoLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/tornadoDetailBreakLine"
+        android:layout_toLeftOf="@+id/addTornadoLocation"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/genericTornadoObservationText"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <Button
+        android:id="@+id/addTornadoLocation"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tornadoDetailBreakLine"
+        android:onClick="addTornadoLocation"
+        android:text="@string/add"
+        android:textSize="30dip"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/tornadoHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/tornadoLocation"
+        android:layout_toLeftOf="@+id/addTornadoHeading"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/genericTornadoDirectionText"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <Button
+        android:id="@+id/addTornadoHeading"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addTornadoLocation"
+        android:onClick="addTornadoHeading"
+        android:text="@string/add"
+        android:textSize="30dip"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/tornadoAcrossCountyLineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/tornadoHeading"
+        android:layout_toLeftOf="@+id/tornadoAcrossCountyLineCheckBox"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/acrossCountyLine"
+        android:layout_marginTop="15dip"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+    <CheckBox 
+        android:id="@+id/tornadoAcrossCountyLineCheckBox"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addTornadoHeading"
+		android:layout_marginRight="10dip"
+        android:checked="false"
+        android:text=""
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="acrossCountyLineCheck"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="hello">Hello World, StormReporterActivity!</string> -->
+    <string name="app_name">Storm Reporter</string>
+    <string name="main_title">NWS</string>
+    <string name="main_sub_title">Storm Reporter</string>
+    <string name="new_report">|    New Report    |</string>
+    <string name="emergency_title">Emergency Contacts</string>
+    <string name="login">Enter 4-Button Password Sequence Below:</string>
+    <string name="password_accepted">Password Accepted</string>
+    <string name="copyright">\u00A9 2012 (Tyrell Cushman, Changmin Shen and Scott Trevorrow)</string>
+    <string name="prefs">Preferences &amp; Settings</string>
+    <string name="exit_label">Exit</string>
+    <string name="settings_title">StormReporter Preferences &amp; Settings</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_number_summary">Include this phone number in the report</string>
+    <string name="camera">Camera</string>
+    <string name="camera_summary">Allow pictures to be included in the report</string>
+    <string name="new_pw_button">Set Password</string>
+    <string name="done">Done</string>
+    <string name="password_activity_title">Set Password</string>
+    <string name="old_pw">Please Enter Current Password Sequence Below:</string>
+    <string name="new_pw">Enter New 4-Button Password Sequence:</string>
+    <string name="repeat_new_pw">Enter New Password Again:</string>
+    <string name="set_prefs">Set Preferences</string>
+    <string name="new_user_greeting_one">Welcome to StormReporter!</string>
+    <string name="phoneOneLabel"> Local Emergency </string>
+    <string name="phoneOneNum">911</string>
+    <string name="phoneTwoLabel"> Local NWS Station </string>
+    <string name="phoneTwoNum"> (608) 235-7909</string>
+    <string name="emergencyNumbers"> Emergency Contact Information </string>
+    <string name="old_report">|   Old Reports   |</string>
+    <string name="prefs_back">Back</string>
+    <string name="help">Help</string>
+    <string name="hello">Hello World, StromReporterActivity!</string>
+    <string name="buttonAdd">Add</string>
+    <string name="buttonDelete">Delete</string>
+    <string name="formactivitytitle">New Report</string>
+    <string name="weatherType">Weather Type</string>
+    <string name="DefaultLocation">Unknown</string>
+    <string name="saveLocationButton">Save</string>
+    <string name="weatherTypeTextEditHint">Enter other type</string>
+    <string name="photoBlockAdd">Add Photo</string>
+    <string name="pictureListDelete">Delete</string>
+    <string name="mainButtonSubmit">Submit</string>
+    <string name="mainButtonSaveForLater">Save For Later</string>
+    <string name="add">+</string>
+    <string name="erase">-</string>
+    <string name="genericAddWeatherType">...add weather type...</string>
+    <string name="genericAddDetail">...add description... </string>
+    <string name="editButtonText">Edit</string>
+    <string name="tornadoDetailText">Tornado Details</string>
+    <string name="genericTornadoDirectionText">Estimated heading...</string>
+    <string name="genericTornadoObservationText">Its location relative to you...</string>
+    <string name="acrossCountyLine">Is it across a county line?</string>
+    <string name="funnelCloudDetailText">Funnel Cloud Details</string>
+    <string name="wallCloudDetailText">Wall Cloud Details</string>
+    <string name="isRotating">Is it rotating?</string>
+    <string name="hailDetailText">Hail Details</string>
+    <string name="genericHailSizeText">...add hail size...</string>
+    <string name="genericMeasurementTypeText">Are you measuring or estimating?</string>
+    <string name="measured">Measured</string>
+    <string name="estimated">Estimated</string>
+    <string name="highWindDetailText">High Wind Detail</string>
+    <string name="genericWindSpeedText">...add wind speed...</string>
+    <string name="otherDetailsText">Further Details/Comments:</string>
+    <string name="damageOrInjuryText">Damage or Injuries?</string>
+    <string name="damage">Damage</string>
+    <string name="injuries">Injuries</string>
+    <string name="fatalities">Fatalities</string>
+    <string name="otherDetailsHint">If time, please provide further details...</string>
+    <string name="location">Location:</string>
+    <string name="unknown">UNKNOWN</string>
+    <string name="genericLocationText">Location: UNKNOWN</string>
+    <string name="genericTimeText">Time: UNKNOWN</string>
+    <string name="submit">Submit Report</string>
+    <string name="change">Change</string>
+    <string name="addPhoto">...add photo...</string>
+    <string name="breakLine">________________________________________</string>
+    <string name="finalBreakLine">__________________</string>
+    <string name="btnIntend">Take Picture</string>
+    <string name="cannot">Cannot</string>
+    <string name="album_name">Storm Reporter Images</string>
+    <string name="genericAddState">...add state...</string>
+    <string name="genericAddCounty">...add county...</string>
+    <string name="locationLayoutText">Enter Your Location</string>
+    <string name="specificLocationHint">Near a city/street/landmark/etc.</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="cancel">Cancel</string>
+    <string name="dateLayoutText">Date:</string>
+    <string name="timeLayoutText">Time:</string>
+    <string name="year">year</string>
+    <string name="forward_slash">/</string>
+    <string name="month">month</string>
+    <string name="day">day</string>
+    <string name="set">Set</string>
+    <string-array name="weatherType">
+        <item >Tornado</item>
+        <item >Funnel Cloud</item>
+        <item >Wall Cloud</item>
+        <item >Hail</item>
+        <item >High Wind</item>
+        <item >Flood</item>
+        <item >Flash Flood</item>
+        <item >Other</item>
+    </string-array>
+    <string-array name="hailDetail">
+        <item> .50 in (Marble size)</item>
+        <item> .75 in (Penny size)</item>
+        <item> .88 in (Nickel size)</item>
+        <item>1.00 in (Quarter size)</item>
+        <item>1.25 in (Half-dollar size)</item>
+        <item>1.75 in (Ping-pong ball size)</item>
+        <item>2.00 in (Chicken egg size)</item>
+        <item>2.50 in (Tennis ball size)</item>
+        <item>2.75 in (Baseball size)</item>
+        <item>3.00 in (Tea cup size)</item>
+        <item>4.00 in (Grapefruit size)</item>
+        <item>4.50 in (Softball size)</item>
+        <item>> 4.50 in (Larger than a softball)</item>
+    </string-array>
+    <string-array name="tornadoPositionDetail">
+        <item>Looking North</item>
+        <item>Looking North-Northwest</item>
+        <item>Looking Northwest</item>
+        <item>Looking West-Northwest</item>
+        <item>Looking West</item>
+        <item>Looking West-Southwest</item>
+        <item>Looking Southwest</item>
+        <item>Looking South-Southwest</item>
+        <item>Looking South</item>
+        <item>Looking South-Southeast</item>
+        <item>Looking Southeast</item>
+        <item>Looking East-Southeast</item>
+        <item>Looking East</item>
+        <item>Looking East-Northeast</item>
+        <item>Looking Northeast</item>
+        <item>Looking North-Northeast</item>
+    </string-array>
+    <string-array name="tornadoMotionDetail">
+        <item>Moving East</item>
+        <item>Moving East-Northeast</item>
+        <item>Moving Northeast</item>
+        <item>Moving North-Northeast</item>
+        <item>Moving North</item>
+        <item>Moving East-Southeast</item>
+        <item>Moving Southeast</item>
+        <item>Moving South-Southeast</item>
+        <item>Moving South</item>
+        <item>Moving North-Northwest</item>
+        <item>Moving Northwest</item>
+        <item>Moving West-Northwest</item>
+        <item>Moving West</item>
+        <item>Moving West-Southwest</item>
+        <item>Moving Southwest</item>
+        <item>Moving South-Southwest</item>
+        <item>Moving South</item>
+    </string-array>
+    <string-array name="wallCloudDetail">
+        <item>Rotating</item>
+        <item>Non-rotating</item>
+    </string-array>
+    <string-array name="windSpeedDetail">
+        <item>Calm winds (~ 1 mph)</item>
+        <item>Light wind (1-3 mph)</item>
+        <item>Light breeze (4-7 mph)</item>
+        <item>Gentle breeze (8-11 mph)</item>
+        <item>Moderate breeze (12-18 mph)</item>
+        <item>Fresh breeze (19-24 mph)</item>
+        <item>String breeze (25-31 mph)</item>
+        <item>Near gale (32-38 mph)</item>
+        <item>Gale (39-46 mph)</item>
+        <item>Strong gale (47-54 mph)</item>
+        <item>Storm (55-63 mph)</item>
+        <item>Violent storm (64-74 mph)</item>
+        <item>Hurricane (>74 mph)</item>
+    </string-array>
+
+
+</resources>

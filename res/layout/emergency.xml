@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- android:background="@color/emergency_background" -->
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:shadowColor="#ccccff"
+        android:shadowDx="-3"
+        android:shadowRadius="1"
+        android:text="@string/emergencyNumbers"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="italic" />
+
+    <TableLayout
+        android:id="@+id/button_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip" >
+
+            <TextView
+                android:id="@+id/phoneOne"
+                android:layout_width="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginTop="40dip"
+                android:gravity="left"
+                android:padding="10dip"
+                android:text="@string/phoneOneLabel"
+                android:textSize="18dip" />
+
+            <Button
+                android:id="@+id/phoneOneButton"
+                android:layout_width="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="40dip"
+                android:gravity="right"
+                android:padding="10dip"
+                android:text="@string/phoneOneNum"
+                android:textSize="18dip" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/phoneTwo"
+                android:layout_gravity="left"
+                android:layout_marginTop="40dip"
+                android:padding="10dip"
+                android:text="@string/phoneTwoLabel"
+                android:textSize="18dip" />
+
+            <Button
+                android:id="@+id/phoneTwoButton"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="40dip"
+                android:padding="10dip"
+                android:text="@string/phoneTwoNum"
+                android:textSize="18dip" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="70dip"
+        android:contentDescription="image"
+        android:onClick="emergencyRightClick"
+        android:src="@drawable/blue_right_arrow_with_blue" />
+
+</LinearLayout>

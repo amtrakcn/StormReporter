@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewForDateAndTime"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/textView1"
+    android:layout_marginBottom="20dip"
+    android:fadingEdgeLength="20dip" >
+
+    <RelativeLayout
+        android:id="@+id/dateAndTimeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dateHeaderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-20dip"
+            android:layout_marginTop="30dip"
+            android:text="@string/dateLayoutText"
+            android:textColor="@color/title_color"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateLayoutBreakLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateHeaderTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:text="@string/breakLine"
+            android:textColor="@color/title_color"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateLayoutBreakLine"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:endYear="2020"
+            android:startYear="2000" />
+
+
+        <TextView
+            android:id="@+id/timeHeaderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datePicker"
+            android:layout_marginBottom="-20dip"
+            android:layout_marginTop="30dip"
+            android:text="@string/timeLayoutText"
+            android:textColor="@color/title_color"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timeLayoutBreakLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeHeaderTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:text="@string/breakLine"
+            android:textColor="@color/title_color"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeLayoutBreakLine"
+            android:layout_centerHorizontal="true" />
+
+
+        <Button
+            android:id="@+id/saveAllButton"
+            android:layout_width="100dip"
+            android:layout_height="55dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/timePicker"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="60dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="save"
+            android:text="@string/save"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancelAllButton"
+            android:layout_width="100dip"
+            android:layout_height="55dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/timePicker"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="60dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="cancel"
+            android:text="@string/cancel"
+            android:textSize="20dip"
+            android:textStyle="bold" >
+        </Button>
+    </RelativeLayout>
+
+</ScrollView>

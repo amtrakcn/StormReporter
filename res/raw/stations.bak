@@ -1,0 +1,12 @@
+KMPX|Twin Cities, MN (KMPX)|Minnesota|w-mpx.webmaster@noaa.gov|9523616670|mkmpx
+KDMX|Des Moines, IA (KDMX)|Iowa|w-dmx.webmaster@noaa.gov|5152702614|ikdmx
+KDVN|Quad Cities, IA (KDVN)|Iowa|w-dvn.webmaster@noaa.gov|5633863976|ikdvn
+KMKX|Milwaukee/Sullivan, WI (KMKX)|Wisconsin|w-mkx.webmaster@noaa.gov|1234567890|wkmkx
+KARX|LaCrosse, WI (KARX)|Wisconsin|w-arx.webmaster@noaa.gov|6087847294|wkarx
+KGRB|Green Bay, WI (KGRB)|Wisconsin|w-grb.webmaster@noaa.gov|9204942363|wkgrb
+TEST|Test Station (TEST)|ZZZZZZZZ|trevorrow@wisc.edu|6086977019|ztest
+!end!
+
+Correct station data format: (station identification code)|(name)|(state)|(email address)|(phone number)|(station password)
+
+Note: If a piece of data is missing or should not be incorporated, use a blank space

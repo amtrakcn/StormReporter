@@ -1,0 +1,70 @@
+KMPX|Twin Cities, MN (KMPX)|Minnesota|w-mpx.webmaster@noaa.gov|9523616670|mkmpx
+KDMX|Des Moines, IA (KDMX)|Iowa|w-dmx.webmaster@noaa.gov|5152702614|ikdmx
+KDVN|Quad Cities, IA (KDVN)|Iowa|w-dvn.webmaster@noaa.gov|5633863976|ikdvn
+KMKX|Milwaukee/Sullivan, WI (KMKX)|Wisconsin|w-mkx.webmaster@noaa.gov|1234567890|wkmkx
+KARX|LaCrosse, WI (KARX)|Wisconsin|w-arx.webmaster@noaa.gov|6087847294|wkarx
+KGRB|Green Bay, WI (KGRB)|Wisconsin|w-grb.webmaster@noaa.gov|9204942363|wkgrb
+TEST|Test Station (TEST)|ZZZZZZZZ|trevorrow@wisc.edu|6086977019|ztest
+!end!
+
+Correct station data format: (station identification code)|(name)|(state)|(email address)|(phone number)|(station password)
+
+Note: If a piece of data is missing or should not be incorporated, use a blank space
+
+KBMX|Birmingham, AL (KBMX)|Alabama|sr-bmx.webmaster@noaa.gov|2056643010|akbmx
+KHUN|Huntsville, AL (KHUN)|Alabama|sr-hun.webmaster@noaa.gov|2568908503|akhun
+KMOB|Mobile, AL (KMOB)|Alabama|sr-mob.webmaster@noaa.gov|2516336443|akmob
+KLZK|Little Rock, AR (KLZK)|Arkansas|sr-lzk.webmaster@noaa.gov|5018340308|aklzk
+KJAX|Jacksonville, FL (KJAX)|Florida|sr-jax.webmaster@noaa.gov|9047414370|fkjax
+KKEY|Key West, FL (KKEY)|Florida|sr-key.webmaster@noaa.gov|3052951316|fkkey
+KMLB|Melbourne, FL (KMLB)|Florida|sr-mlb.webmaster@noaa.gov|3212550212|fkmlb
+KMFL|Miami, FL (KMFL)|Florida|sr-mfl.webmaster@noaa.gov|3052294522|fkmfl
+KTLH|Tallahassee, FL (KTLH)|Florida|sr-tae.webmaster@noaa.gov|8509428833|fktlh
+KTBW|Tampa Bay Area, FL (KTLH)|Florida|sr-tbw.webmaster@noaa.gov|8136452323|fktbw
+KFFC|Peachtree City, GA (KFFC)|Georgia|sr-ffc.webmaster@noaa.gov|7704861133|gkffc
+KLCH|Lake Charles, LA (KLCH)|Louisiana|sr-lch.webmaster@noaa.gov|3374775285|lklch
+KLIX|New Orleans/Baton Rouge, LA (KLIX)|Louisiana|sr-lix.webmaster@noaa.gov|5045227330|lklix
+KSHV|Shreveport, LA (KSHV)|Louisiana|sr-shv.webmaster@noaa.gov|3186313669|lkshv
+KJAN|Jackson, MS (KJAN)|Missisipi|sr-jan.webmaster@noaa.gov|6019362189|mkjan
+KABQ|Albuquerque, NM (KABQ)|New Mexico|sr-abq.webmaster@noaa.gov|5052430702|nkabq
+KOUN|Norman, OK (KOUN)|Oklahoma|sr-oun.webmaster@noaa.gov|4053253816|okoun
+KTSA|Tulsa, OK (KTSA)|Oklahoma|sr-tsa.webmaster@noaa.gov|9188387838|oktsa
+KSJU|San Juan, PR (KSJU)|Puerto Rico|sr-sju.webmaster@noaa.gov|7872534586|pksju
+KMRX|Morristown, TN (KMRX)|Tennessee|sr-mrx.webmaster@noaa.gov|4235863771|tkmrx
+KMEG|Memphis, TN (KMEG)|Tennessee|sr-meg.webmaster@noaa.gov|9015440399|tkmeg
+KBNA|nashville, TN (KBNA)|Tennessee|sr-ohx.webmaster@noaa.gov|6157548500|tkbna
+KAMA|Amarillo, TX (KAMA)|Texas|sr-ama.webmaster@noaa.gov|8063351121|tkama
+KEWX|Austin/San Antonio, TX (KEWX)|Texas|sr-ewx.webmaster@noaa.gov|8306063617|tkewx
+KBRO|Brownsville, TX (KBRO)|Texas|sr-bro.webmaster@noaa.gov|9565041432|tkbro
+KCRP|Corpus Christi, TX (KCRP)|Texas|sr-bro.webmaster@noaa.gov|3612890959|tkcrp
+KFWD|Dallas/Fort Worth, TX (KFWD)|Texas|sr-fwd.webmaster@noaa.gov|8174292631|tkfwd
+KELP|El Paso, TX (KELP)|Texas|sr-epz.webmaster@noaa.gov|5755894088|tkelp
+KHGX|Houston/Galveston, TX (KHGX)|sr-hgx.webmaster@noaa.gov|2813375074|tkhgx
+KLUB|Lubbock, TX (KLUB)|sr-lub.webmaster@noaa.gov|8067454260|tklub
+KMAF|Midland/Odessa, TX (KMAF)|sr-maf.webmaster@noaa.gov|4325635901|tkmaf
+KSJT|San Angelo, TX (KSJT)|sr-sjt.webmaster@noaa.gov|3259449445|tksjt
+KFGZ|Flagstaff, AZ (KEGZ)|w-fgz.webmaster@noaa.gov|9285569161|akfgz
+KPSR|Phoenix, AZ (KPSR)|w-psr.webmaster@noaa.gov|6022750073|akpsr
+KTWC|Tucson, AZ (KTWC)|w-twc.webmaster@noaa.gov|5206706526|aktwc
+KEKA|Eureka, CA (KEKA)|w-eka.webmaster@noaa.gov|7074436484|ckeka
+KLOX|Los Angeles, CA (KLOX)|w-lox.webmaster@noaa.gov|8059886610|cklox
+KSTO|Sacramento, CA (KSTO)|w-sto.webmaster@noaa.gov|9169793051|cksto
+KSGX|San Diego, CA (KSGX)|w-sgx.webmaster@noaa.gov|8586758700|cksgx
+KMTR|San Francisco/Bay Area, CA (KMTR)|w-mtr.webmaster@noaa.gov|8316561725|ckmtr
+KHNX|San Joaquin Valley, CA (KHNX)|w-hnx.webmaster@noaa.gov|5595843752|ckhnx
+KBOI|Boise, ID (KBOI)|w-boi.webmaster@noaa.gov|2083349860|ikboi
+KPIH|Pocatello, ID (KPIH)|w-pih.webmaster@noaa.gov|2082330834|ikpih
+KBYZ|Billings, MT (KBYZ)|w-byz.webmaster@noaa.gov|4066520851|mkbyz
+KGGW|Glasgow, MT (KGGW)|w-ggw.webmaster@noaa.gov|4062284042|mkggw
+KTFX|Great Falls, MT (KTFX)|w-tfx.webmaster@noaa.gov|4064532081|mktfx
+KMSO|Missoula, MT (KMSO)|w-mso.webmaster@noaa.gov|4063294840|mkmso
+KLKN|Elko, NV (KLEN)|w-lkn.webmaster@noaa.gov|7757786716|nklkn
+KVEF|Las Vegas, NV (KVEF)|w-vef.webmaster@noaa.gov|7022639744|nkvef
+KREV|Reno, NV (KREV)|w-rev.webmaster@noaa.gov|7756738100|nkrev
+KMFR|Medford, OR (KMFR)|w-mfr.webmaster@noaa.gov|5417731067|okmfr
+KPDT|Pendleton, OR (KPDT)|w-pdt.webmaster@noaa.gov|5412767832|okpdt
+KPQR|Portland, OR (KPQR)|w-pqr.webmaster@noaa.gov|5032619246|okpqr
+KSLC|Salt Lake City, UT (KSLC)|w-slc.webmaster@noaa.gov|8015245133|ukslc
+KSEW|Seattle, WA (KSEW)|w-sew.webmaster@noaa.gov|2065266087|wksew
+KOTX|Spokane, WA (KOTX)|w-otx.webmaster@noaa.gov|5092440110|wkotx
+KHNL|Honolulu, HI (KHNL)|W-HFO.Webmaster@noaa.gov|8089735286|wkhnl

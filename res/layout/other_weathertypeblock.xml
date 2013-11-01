@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/otherWeatherTypeBlockLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+
+    <EditText
+        android:id="@+id/otherWeatherTypeTextBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/buttonAddOtherWeatherType"
+        android:hint="@string/weatherTypeTextEditHint" />
+
+    <TextView
+        android:id="@+id/otherWeatherTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/otherWeatherTypeTextBox"
+        android:layout_alignTop="@+id/otherWeatherTypeTextBox"
+        android:layout_toLeftOf="@+id/buttonEditOtherWeatherType"
+        android:gravity="center_vertical"
+        android:textSize="25dip"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonEditOtherWeatherType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/buttonAddOtherWeatherType"
+        android:onClick="editOtherWeatherType"
+        android:text="@string/editButtonText"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonAddOtherWeatherType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:onClick="addOtherWeatherType"
+        android:text="@string/saveLocationButton" />
+
+</RelativeLayout>

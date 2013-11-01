@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/extraDetailsBlock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/otherDetailsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/otherDetailsText"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/otherDetailsDetailBreakLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otherDetailsHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:text="@string/breakLine"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/otherDetailsTextBox"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_below="@+id/otherDetailsDetailBreakLine"
+        android:layout_toLeftOf="@+id/buttonEditOtherDetails"
+        android:gravity="left"
+        android:hint="@string/otherDetailsHint" />
+
+    <TextView
+        android:id="@+id/otherDetailsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_alignBottom="@+id/otherDetailsTextBox"
+        android:layout_below="@+id/otherDetailsDetailBreakLine"
+        android:layout_alignTop="@+id/otherDetailsTextBox"
+        android:layout_toLeftOf="@+id/buttonEditOtherDetails"
+        android:textSize="25dip"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonEditOtherDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/otherDetailsTextBox"
+        android:layout_alignTop="@+id/otherDetailsTextBox"
+        android:layout_toLeftOf="@+id/buttonAddOtherDetails"
+        android:layout_below="@+id/otherDetailsDetailBreakLine"
+        android:onClick="editOtherDetails"
+        android:text="@string/editButtonText"
+        android:visibility="gone" />
+    
+     <Button
+        android:id="@+id/buttonAddOtherDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/otherDetailsTextBox"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/otherDetailsTextBox"
+        android:layout_below="@+id/otherDetailsDetailBreakLine"
+        android:onClick="saveOtherDetails"
+        android:text="@string/saveLocationButton" />
+
+</RelativeLayout>

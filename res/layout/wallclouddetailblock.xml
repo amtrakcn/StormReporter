@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wallCloudDetailBlock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/wallCloudDetailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/wallCloudDetailText"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/wallCloudDetailBreakLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wallCloudDetailTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:text="@string/breakLine"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/wallCloudLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/wallCloudDetailBreakLine"
+        android:layout_toLeftOf="@+id/addWallCloudLocation"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/genericTornadoObservationText"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <Button
+        android:id="@+id/addWallCloudLocation"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/wallCloudDetailBreakLine"
+        android:onClick="addWallCloudLocation"
+        android:text="@string/add"
+        android:textSize="30dip"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/wallCloudHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/wallCloudLocation"
+        android:layout_toLeftOf="@+id/addWallCloudHeading"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/genericTornadoDirectionText"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <Button
+        android:id="@+id/addWallCloudHeading"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addWallCloudLocation"
+        android:onClick="addWallCloudHeading"
+        android:text="@string/add"
+        android:textSize="30dip"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/wallCloudAcrossCountyLineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/wallCloudHeading"
+        android:layout_toLeftOf="@+id/wallCloudAcrossCountyLineCheckBox"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/acrossCountyLine"
+        android:layout_marginTop="15dip"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+    <CheckBox 
+        android:id="@+id/wallCloudAcrossCountyLineCheckBox"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addWallCloudHeading"
+		android:layout_marginRight="10dip"
+        android:checked="false"
+        android:text=""
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="wallCloudAcrossCountyLineCheck"
+        />
+    <TextView
+        android:id="@+id/wallCloudRotatingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/wallCloudAcrossCountyLineTextView"
+        android:layout_toLeftOf="@+id/wallCloudRotatingCheckBox"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/isRotating"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+    <CheckBox 
+        android:id="@+id/wallCloudRotatingCheckBox"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/wallCloudAcrossCountyLineCheckBox"
+		android:layout_marginRight="10dip"
+        android:checked="false"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="wallCloudIsRotating"
+        />
+
+</RelativeLayout>

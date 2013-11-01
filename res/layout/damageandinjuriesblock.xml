@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/damageAndInjuriesBlock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/damageAndInjuriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/damageOrInjuryText"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/damageAndInjuryBreakLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/damageAndInjuriesTextView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/breakLine"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/damageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/damageAndInjuryBreakLine"
+        android:layout_toLeftOf="@+id/damageCheckBox"
+        android:layout_alignTop="@+id/damageCheckBox"
+        android:layout_alignBottom="@+id/damageCheckBox"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/damage"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+    <CheckBox 
+        android:id="@+id/damageCheckBox"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/damageAndInjuryBreakLine"
+		android:layout_marginRight="10dip"
+        android:checked="false"
+        android:text=""
+        android:layout_marginTop="15dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="damageCheck"
+        />
+    <TextView
+        android:id="@+id/injuryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/damageTextView"
+        android:layout_toLeftOf="@+id/injuryCheckBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/injuryCheckBox"
+        android:layout_alignBottom="@+id/injuryCheckBox"
+        android:gravity="center_vertical"
+        android:text="@string/injuries"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+    <CheckBox 
+        android:id="@+id/injuryCheckBox"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/damageCheckBox"
+		android:layout_marginRight="10dip"
+        android:checked="false"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="injuryCheck"
+        />
+    <TextView
+        android:id="@+id/fatalityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_below="@+id/injuryTextView"
+        android:layout_toLeftOf="@+id/fatalityCheckBox"
+        android:layout_alignTop="@+id/fatalityCheckBox"
+        android:layout_alignBottom="@+id/fatalityCheckBox"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:text="@string/fatalities"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+    <CheckBox 
+        android:id="@+id/fatalityCheckBox"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/injuryCheckBox"
+		android:layout_marginRight="10dip"
+        android:checked="false"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="fatalityCheck"
+        />
+
+</RelativeLayout>

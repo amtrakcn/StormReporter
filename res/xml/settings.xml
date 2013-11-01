@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Preferences" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="phone_number"
+            android:summary="@string/phone_number_summary"
+            android:title="@string/phone_number" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="camera"
+            android:summary="@string/camera_summary"
+            android:title="@string/camera" />
+        
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Settings" >
+        <EditTextPreference
+            android:key="username"
+            android:title="Display Name"
+            android:summary="Set your name which will be displayed on submitted reports"
+            />
+        <ListPreference
+            android:key="home_station"
+            android:title="Home Station"
+            android:summary="Set the NWS station that trained you, or oversees your area"
+            />
+         <EditTextPreference
+            android:key="verification_code"
+            android:title="Verify Training"
+            android:summary="Indicate if you are a certified spotter"
+            android:enabled="false"
+            android:dialogTitle="Enter Home Station Spotter Verification Code"
+            android:inputType="textPassword"
+            />
+        <Preference
+            android:key="change_password"
+            android:clickable="true"
+            android:onClick="changePassword"
+            android:summary="Set/change your current 4-button password sequence"
+            android:title="@string/password_activity_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

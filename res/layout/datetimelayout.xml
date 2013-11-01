@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dateAndTimeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dateHeaderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/dateLayoutText"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/dateLayoutBreakLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateHeaderTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:text="@string/breakLine"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/dayEditText"
+        android:layout_width="50dip"
+        android:layout_height="55dip"
+        android:hint="@string/day"
+        android:layout_below="@+id/dateLayoutBreakLine"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+       
+        />
+    <TextView 
+        android:id="@+id/dayTextView"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateLayoutBreakLine"
+        android:layout_alignTop="@+id/dayEditText"
+        android:layout_alignBottom="@+id/dayEditText"
+        android:layout_alignRight="@+id/dayEditText"
+           
+	/>
+    <TextView 
+        android:id="@+id/datebreak1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_toRightOf="@+id/dayEditText"
+        android:layout_alignBottom="@+id/dayEditText"
+        android:layout_alignTop="@+id/dayEditText"
+        android:layout_below="@+id/dateLayoutBreakLine"
+        android:text="@string/forward_slash"
+        android:textSize="50dip"
+	/>
+    <EditText
+        android:id="@+id/monthEditText"
+        android:layout_width="100dip"
+        android:layout_height="55dip"
+        android:layout_toRightOf="@+id/datebreak1"
+        android:hint="@string/month"
+        android:layout_below="@+id/dateLayoutBreakLine"
+        />
+    <TextView 
+        android:id="@+id/monthTextView"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/datebreak1"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/monthEditText"
+        android:layout_alignBottom="@+id/monthEditText"
+        android:layout_alignRight="@+id/monthEditText"
+	/>
+    <TextView 
+        android:id="@+id/datebreak2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_toRightOf="@+id/monthEditText"
+        android:layout_alignBottom="@+id/monthEditText"
+        android:layout_alignTop="@+id/monthEditText"
+        android:layout_below="@+id/dateLayoutBreakLine"
+        android:text="@string/forward_slash"
+        android:textSize="50dip"
+	/>
+    
+    <EditText
+        android:id="@+id/yearEditText"
+        android:layout_width="100dip"
+        android:layout_height="55dip"
+        android:hint="@string/year"
+        android:layout_toRightOf="@+id/datebreak2"
+        android:layout_below="@+id/dateLayoutBreakLine"
+        />
+    <TextView 
+        android:id="@+id/yearTextView"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/datebreak2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/yearEditText"
+        android:layout_alignBottom="@+id/yearEditText"
+        android:layout_alignRight="@+id/yearEditText" 
+	/>
+    
+    <Button 
+        android:layout_marginTop="10dip"
+        android:id="@+id/clearDateButton"
+        android:layout_height="wrap_content"
+        android:layout_width="100dip"
+        android:text="@string/clear"
+        android:layout_below="@+id/datebreak2"
+        android:layout_centerHorizontal="true"
+        android:onClick="clearDate"
+        
+        />
+    
+    <TextView
+        android:id="@+id/timeHeaderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dip"
+        android:layout_marginTop="30dip"
+        android:layout_below="@+id/clearDateButton"
+        android:text="@string/timeLayoutText"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/timeLayoutBreakLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeHeaderTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:text="@string/breakLine"
+        android:textColor="@color/title_color"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/hourEditText"
+        android:layout_width="50dip"
+        android:layout_height="55dip"
+        android:hint="@string/clear"
+        android:layout_below="@+id/timeLayoutBreakLine"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+       
+        />
+    <TextView 
+        android:id="@+id/hourTextView"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateLayoutBreakLine"
+           
+	/>
+    <TextView 
+        android:id="@+id/datebreak1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_toRightOf="@+id/dayEditText"
+        android:layout_alignBottom="@+id/dayEditText"
+        android:layout_alignTop="@+id/dayEditText"
+        android:layout_below="@+id/dateLayoutBreakLine"
+        android:text="@string/forward_slash"
+        android:textSize="50dip"
+	/>
+    <EditText
+        android:id="@+id/monthEditText"
+        android:layout_width="100dip"
+        android:layout_height="55dip"
+        android:layout_toRightOf="@+id/datebreak1"
+        android:hint="@string/month"
+        android:layout_below="@+id/dateLayoutBreakLine"
+        />
+    <TextView 
+        android:id="@+id/monthTextView"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/datebreak1"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/monthEditText"
+        android:layout_alignTop="@+id/monthEditText"   
+	/>
+
+</RelativeLayout>

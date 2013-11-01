@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weatherTypeBlockLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/typeblock_weatherType"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/typeblock_buttonAddWeather"
+        android:gravity="center_vertical"
+        android:text="@string/genericAddWeatherType"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <include
+        android:id="@+id/otherWeatherTypeInView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_toLeftOf="@+id/typeblock_buttonAddWeather"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        layout="@layout/other_weathertypeblock" />
+
+    <Button
+        android:id="@+id/typeblock_buttonAddWeather"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:onClick="addWeatherType"
+        android:text="@string/add"
+        android:textSize="30dip"
+        android:textStyle="bold" />
+
+</RelativeLayout>

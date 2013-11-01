@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/title_background"
+    android:orientation="horizontal" >
+   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="0dip"
+            android:shadowColor="#ccccff"
+            android:shadowRadius="12"
+            android:text="@string/main_title"
+            android:textColor="@color/title_color"
+            android:textSize="130dip" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="-30dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:shadowColor="#ccccff"
+            android:shadowDx="-3.5"
+            android:shadowRadius="1.5"
+            android:text="@string/main_sub_title"
+            android:textColor="@color/title_color"
+            android:textSize="40dip"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/new_report_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="15dip"
+            android:text="@string/copyright"
+            android:textColor="@color/title_color"
+            android:textSize="7dip" />
+
+        <ImageView
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="90dip"
+            android:contentDescription="image"
+            android:onClick="titleLeftClick"
+            android:src="@drawable/blue_left_arrow_with_red_and_title" />
+
+        <ImageView
+            android:id="@+id/login_button"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="-90dip"
+            android:contentDescription="image"
+            android:onClick="titleRightClick"
+            android:src="@drawable/blue_right_arrow_with_blue_and_title" />
+
+    </LinearLayout>
+
+</LinearLayout>

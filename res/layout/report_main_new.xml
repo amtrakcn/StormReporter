@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/textView1"
+    android:layout_marginBottom="20dip"
+    android:fadingEdgeLength="20dip" >
+
+    <RelativeLayout
+        android:id="@+id/reportLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        >
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/formactivitytitle"
+            android:textColor="@color/title_color"
+            android:textSize="40dip"
+            android:textStyle="bold|italic" />
+        
+        
+        <include
+            android:id="@+id/timeBlock"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            layout="@layout/timedetailblock" />
+
+        <include
+            android:layout_marginTop="10dip"
+            android:id="@+id/locationBlock"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeBlock"
+            layout="@layout/locationdetailblock" />
+        
+         <include
+            android:layout_marginTop="10dip"
+            android:id="@+id/photoBlock"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationBlock"
+            layout="@layout/photoblock" />
+        
+        <!-- android:textAppearance="?android:attr/textAppearanceLarge" -->
+
+
+        <!-- Weather type graphics -->
+
+        <TextView
+            android:id="@+id/weatherTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photoBlock"
+            android:layout_marginBottom="-20dip"
+            android:layout_marginTop="30dip"
+            android:text="@string/weatherType"
+            android:textColor="@color/title_color"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weatherTypeBreakLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weatherTypeTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dip"
+            android:text="@string/breakLine"
+            android:textColor="@color/title_color"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/weatherTypeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weatherTypeBreakLine"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/weatherType1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/weathertypeblock_new" />
+
+            <include
+                android:id="@+id/weatherType2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weatherType1"
+                layout="@layout/weathertypeblock_new" />
+
+            <include
+                android:id="@+id/weatherType3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weatherType2"
+                layout="@layout/weathertypeblock_new" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/tornadoDetailBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weatherTypeLayout"
+            layout="@layout/tornadodetailblock" />
+
+        <include
+            android:id="@+id/funnelCloudDetailBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tornadoDetailBlock"
+            layout="@layout/funnelclouddetailblock" />
+
+        <include
+            android:id="@+id/wallCloudDetailBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/funnelCloudDetailBlock"
+            layout="@layout/wallclouddetailblock" />
+
+        <include
+            android:id="@+id/hailDetailBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallCloudDetailBlock"
+            layout="@layout/haildetailblock" />
+
+        <include
+            android:id="@+id/highWindDetailBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hailDetailBlock"
+            layout="@layout/highwinddetailblock" />
+
+        <include
+            android:id="@+id/damageAndInjuriesBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/highWindDetailBlock"
+            layout="@layout/damageandinjuriesblock" />
+
+        <include
+            android:id="@+id/otherDetailsBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/damageAndInjuriesBlock"
+            layout="@layout/extradetails" />
+
+        <include
+            android:id="@+id/submitAndSaveBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otherDetailsBlock"
+            layout="@layout/submitandsaveblock" />
+    </RelativeLayout>
+
+</ScrollView>
